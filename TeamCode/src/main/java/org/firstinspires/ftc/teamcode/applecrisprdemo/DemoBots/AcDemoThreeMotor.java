@@ -8,12 +8,12 @@ import org.firstinspires.ftc.teamcode.applecrisprdemo.AcRevComponents.AcREVConti
  * Created by Jared on 10-Mar-18.
  */
 
-public class AcDemoTricycle extends AcDemoBot {
+public class AcDemoThreeMotor extends AcDemoBot {
 
     private AcREVContinuousServo leftWheel;
     private AcREVContinuousServo rightWheel;
 
-    public AcDemoTricycle(HardwareMap map) {
+    public AcDemoThreeMotor(HardwareMap map) {
         super(map);
         leftWheel = new AcREVContinuousServo("left");
         rightWheel = new AcREVContinuousServo("right", "tricycleRight");

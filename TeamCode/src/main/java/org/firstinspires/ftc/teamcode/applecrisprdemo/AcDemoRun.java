@@ -3,6 +3,7 @@ import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 
 import org.firstinspires.ftc.teamcode.applecrisprdemo.DemoBots.AcDemoBot;
+import org.firstinspires.ftc.teamcode.applecrisprdemo.DemoBots.AcDemoThreeMotor;
 
 /**
  * Created by Riley on 13-Apr-17.
@@ -20,7 +21,7 @@ public class AcDemoRun extends LinearOpMode {
             robot = new org.firstinspires.ftc.teamcode.applecrisprdemo.DemoBots.AcDemoFourMotor(hardwareMap);
         } catch (IllegalArgumentException ignored){}
         try {
-            robot = new org.firstinspires.ftc.teamcode.applecrisprdemo.DemoBots.AcDemoTricycle(hardwareMap);
+            robot = new AcDemoThreeMotor(hardwareMap);
         } catch (IllegalArgumentException ignored){}
     }
     /**

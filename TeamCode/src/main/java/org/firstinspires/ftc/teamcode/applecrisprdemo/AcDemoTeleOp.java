@@ -5,6 +5,7 @@ import com.qualcomm.robotcore.eventloop.opmode.OpMode;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 
 import org.firstinspires.ftc.teamcode.applecrisprdemo.DemoBots.AcDemoBot;
+import org.firstinspires.ftc.teamcode.applecrisprdemo.DemoBots.AcDemoThreeMotor;
 
 /**
  * Created by Riley on 13-Apr-17.
@@ -35,7 +36,7 @@ public class AcDemoTeleOp extends OpMode {
         }
         catch (IllegalArgumentException ignored){}
         try {
-            robot = new org.firstinspires.ftc.teamcode.applecrisprdemo.DemoBots.AcDemoTricycle(hardwareMap);
+            robot = new AcDemoThreeMotor(hardwareMap);
         }
         catch (IllegalArgumentException ignored){}
     }
